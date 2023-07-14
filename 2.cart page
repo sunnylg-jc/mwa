@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Cart</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top frame styles */
+    #topFrame {
+      height: 60px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    #topFrame a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    /* Left frame styles */
+    #leftFrame {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+
+    #leftFrame a {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Right frame styles */
+    #rightFrame {
+      padding: 20px;
+    }
+
+    /* Cart page styles */
+    .container {
+      max-width: 800px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .book-image {
+      width: 80px;
+    }
+
+    .add-to-cart {
+      display: flex;
+      justify-content: center;
+    }
+
+    .add-to-cart button {
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .add-to-cart button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top frame -->
+  <div id="topFrame">
+    <div>
+      <img src="logo.png" alt="College Logo" width="50" height="50">
+      <span>College Name</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+
+  <!-- Left frame -->
+  <div id="leftFrame">
+    <a href="catalogue.html">MCA</a>
+    <a href="catalogue.html">Engineering</a>
+    <a href="catalogue.html">Science</a>
+    <a href="catalogue.html">Arts</a>
+  </div>
+
+  <!-- Right frame -->
+  <div id="rightFrame">
+    <div class="container">
+      <h2>Cart</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Author / Publication</th>
+            <th>Price</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><img class="book-image" src="book1.jpg" alt="Book 1"></td>
+            <td>Book 1</td>
+            <td>Author 1 / Publication 1</td>
+            <td>$19.99</td>
+            <td class="add-to-cart"><button type="button">Add to Cart</button></td>
+          </tr>
+          <tr>
+            <td><img class="book-image" src="book2.jpg" alt="Book 2"></td>
+            <td>Book 2</td>
+            <td>Author 2 / Publication 2</td>
+            <td>$24.99</td>
+            <td class="add-to-cart"><button type="button">Add to Cart</button></td>
+          </tr>
+          <!-- Add more rows for other books in the cart -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- If the frames are not supported -->
+  <noscript>
+    Your browser does not support frames.
+  </noscript>
+</body>
+</html>
