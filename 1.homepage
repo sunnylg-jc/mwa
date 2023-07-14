@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Website</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    
+   /* Top frame styles */
+#topFrame {
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.college-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+    
+    /* Left frame styles */
+    #leftFrame {
+      width: 200px;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    
+    #leftFrame a {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+    
+    /* Right frame styles */
+    #rightFrame {
+      padding: 20px;
+    }
+    
+    /* Description page styles */
+    #description {
+      font-size: 20px;
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top frame -->
+<div id="topFrame">
+  <div>
+    <img src="logo.png" alt="College Logo" width="50" height="50">
+    <span class="college-name">College Name</span>
+  </div>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="login.html">Login</a>
+    <a href="registration.html">Registration</a>
+    <a href="catalogue.html">Catalogue</a>
+    <a href="cart.html">Cart</a>
+  </div>
+</div>
+
+
+  <!-- Left frame -->
+  <div id="leftFrame">
+    <a href="catalogue.html">MCA</a>
+    <a href="catalogue.html">Engineering</a>
+    <a href="catalogue.html">Science</a>
+    <a href="catalogue.html">Arts</a>
+  </div>
+
+  <!-- Right frame -->
+  <div id="rightFrame">
+    <div id="description">
+      <h1>Welcome to our College Website!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia orci nec justo auctor iaculis. Sed consectetur tincidunt tellus, eu facilisis sem dignissim id.</p>
+    </div>
+  </div>
+
+  <!-- If the frames are not supported -->
+  <noscript>
+    Your browser does not support frames.
+  </noscript>
+</body>
+</html>
