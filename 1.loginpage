@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Top frame styles */
+    #topFrame {
+      height: 60px;
+      background-color: #333;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    #topFrame a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    /* Left frame styles */
+    #leftFrame {
+      background-color: #fff; 
+ color: black;
+ display: block;
+ padding: 12px;
+ text-dxecoration: none
+    }
+
+    #leftFrame a {
+      display: block;
+      margin-bottom: 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Right frame styles */
+    #rightFrame {
+      padding: 20px;
+    }
+
+    /* Login page styles */
+    .container {
+      max-width: 400px;
+      margin: 100px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    .form-group input[type="text"],
+    .form-group input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background-color: #333;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <!-- Top frame -->
+  <div id="topFrame">
+    <div>
+      <img src="logo.png" alt="College Logo" width="50" height="50">
+      <span>College Name</span>
+    </div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="registration.html">Registration</a>
+      <a href="catalogue.html">Catalogue</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div>
+
+  <!-- Left frame -->
+  <div id="leftFrame"; style="width: 10%; height: 100px; float: left;">
+    <a href="catalogue.html">MCA</a>
+    <a href="catalogue.html">Engineering</a>
+    <a href="catalogue.html">Science</a>
+    <a href="catalogue.html">Arts</a>
+  </div>
+
+  <!-- Right frame -->
+  <div id="rightFrame">
+    <div class="container">
+      <h2>Login</h2>
+      <form>
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- If the frames are not supported -->
+  <noscript>
+    Your browser does not support frames.
+  </noscript>
+</body>
+</html>
